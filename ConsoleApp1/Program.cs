@@ -18,5 +18,14 @@ namespace ConsoleApp1
             Console.WriteLine(boolb.GetType().ToString());
             Console.ReadLine();
         }
+        public void TestMethod()
+        {
+            int a = 123;
+            if (a == 123)
+            {
+                int b = 1234;
+            }
+            b = 5;
+        }
     }
 }
