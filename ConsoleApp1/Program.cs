@@ -16,16 +16,17 @@ namespace ConsoleApp1
 
             Console.WriteLine(inta.GetType().ToString());
             Console.WriteLine(boolb.GetType().ToString());
+            new Program().TestMethod();
             Console.ReadLine();
         }
+
+        int a = 5;
         public void TestMethod()
         {
             int a = 123;
-            if (a == 123)
-            {
-                int b = 1234;
-            }
-            b = 5;
+            Console.WriteLine(a.ToString());
+            this.a = 123321456;
+            Console.WriteLine(this.a.ToString());
         }
     }
 }
