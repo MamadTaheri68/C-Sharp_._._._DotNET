@@ -19,17 +19,20 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            WeekDay day;
-            day = WeekDay.Sat;
-            string wd = Console.ReadLine();
-            day = (WeekDay)Enum.Parse(typeof(WeekDay), wd);
+            TestComment t = new TestComment();
+            t.Add(2, 5);
 
-            List<string> names = new List<string> { "ali", "mamad", "zahra" };
-            foreach (var item in names)
-            {
-                Console.WriteLine(item);
-            }
-            SqlConnection cnn;
+            //WeekDay day;
+            //day = WeekDay.Sat;
+            //string wd = Console.ReadLine();
+            //day = (WeekDay)Enum.Parse(typeof(WeekDay), wd);
+
+            //List<string> names = new List<string> { "ali", "mamad", "zahra" };
+            //foreach (var item in names)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //SqlConnection cnn;
             //for (int i = 0; i < 10; i++)
             //{
             //    Console.Write(i + " - ");
