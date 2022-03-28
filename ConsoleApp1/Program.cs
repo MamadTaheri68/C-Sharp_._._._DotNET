@@ -17,6 +17,14 @@ namespace ConsoleApp1
             Change();
             Console.WriteLine(t.Test);
             Console.ReadLine();
+
+            TestPartial tp = new TestPartial();
+            tp.Add();
+            tp.MyProperty = 1;
+
+            string test = "123";
+            int testConvert = test.ToSaveInt();
+            bool result = test.IsSSN();
         }
 
         private static void Change()
