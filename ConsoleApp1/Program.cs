@@ -13,6 +13,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            SortInputArray();
+            
+        }
+        
+        
+        public static void SortInputArray()
+        {
             var c = Console.ReadLine();
 
             var a = new int[int.Parse(c)];
@@ -65,7 +72,6 @@ namespace ConsoleApp1
 
             }
             Console.ReadKey();
-
 
         }
     }
