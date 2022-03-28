@@ -8,22 +8,65 @@ using ClassLibrary1;
 
 namespace ConsoleApp1
 {
+    
     class Program
     {
         static void Main(string[] args)
         {
-            PersonTester(new Student1());
-        } 
-        private static void PersonTester(IPerson person)
-        {
-            if(person is Teacher1)
+            var c = Console.ReadLine();
+
+            var a = new int[int.Parse(c)];
+            Console.WriteLine("--------------");
+
+            for (int i = 0; i < int.Parse(c); i++)
             {
-                Teacher1 t = person as Teacher1;
+                var d = Console.ReadLine();
+                a[i] = int.Parse(d);
             }
-            else if (person is Student1)
+            Console.WriteLine("--------------");
+
+            int temp = 0;
+
+            for (int write = 0; write < a.Length; write++)
             {
-                Student1 s = person as Student1;
+                for (int sort = 0; sort < a.Length - 1; sort++)
+                {
+                    if (a[sort] > a[sort + 1])
+                    {
+                        temp = a[sort + 1];
+                        a[sort + 1] = a[sort];
+                        a[sort] = temp;
+                    }
+                }
             }
-            
+
+            foreach (var item in a)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadKey();
+            Console.WriteLine("--------------");
+            int count = 0;
+            int t = a[0];
+
+            foreach (var item in a)
+            {
+                if (t == item)
+                {
+                    count++;
+                }
+                else
+                {
+                    Console.WriteLine($"{t}: {count}");
+                    count = 1;
+                    t = item;
+                }
+
+
+            }
+            Console.ReadKey();
+
+
         }
+    }
 }
