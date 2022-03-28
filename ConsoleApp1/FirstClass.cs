@@ -26,10 +26,10 @@ namespace ConsoleApp1
             set { myVar = value; }
         }
 
-        public int MyProperty2 { get; }
-        public int MyProperty3 { get; private set; } = 12;
+        public int FirstNamae { get; }
+        public int LastName{ get; private set; } = 12;
 
-        public string Fullname => $"{MyProperty2} {MyProperty3}";
+        public string Fullname => $"{FirstNamae} {LastName}";
 
     }
 }
