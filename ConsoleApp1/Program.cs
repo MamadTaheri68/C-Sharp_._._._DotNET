@@ -12,25 +12,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            SingleTonTest t = SingleTonTest.GetInstance();
-            t.Test = 2;
-            Change();
-            Console.WriteLine(t.Test);
-            Console.ReadLine();
+            Person p = new Person();
+            Student s = new Student();
+            test1(s);
+            test(p);
+            test(s);
 
-            TestPartial tp = new TestPartial();
-            tp.Add();
-            tp.MyProperty = 1;
 
-            string test = "123";
-            int testConvert = test.ToSaveInt();
-            bool result = test.IsSSN();
         }
 
-        private static void Change()
+        private static void test(Person p)
         {
-            SingleTonTest t = SingleTonTest.GetInstance();
-            t.Test = 5;
+            throw new NotImplementedException();
+        }
+
+        private static void test1(Student s)
+        {
+            throw new NotImplementedException();
         }
     }
 }
