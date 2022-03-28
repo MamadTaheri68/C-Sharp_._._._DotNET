@@ -12,23 +12,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Person p = new Person();
-            Student s = new Student();
-            test1(s);
-            test(p);
-            test(s);
-
-
-        }
-
-        private static void test(Person p)
+            PersonTester(new Student1());
+        } 
+        private static void PersonTester(IPerson person)
         {
-            throw new NotImplementedException();
+            if(person is Teacher1)
+            {
+                Teacher1 t = person as Teacher1;
+            }
+            else if (person is Student1)
+            {
+                Student1 s = person as Student1;
+            }
+            
         }
-
-        private static void test1(Student s)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }
