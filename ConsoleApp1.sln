@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary3", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2_SOLID", "ConsoleApp2_SOLID\ConsoleApp2_SOLID.csproj", "{AFF76B8A-277E-4A61-AB98-0FB84389E2D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3_Operators_Cast", "ConsoleApp3_Operators_Cast\ConsoleApp3_Operators_Cast.csproj", "{8EC27A7B-C4A3-4743-A1C8-BD147EC3B9F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AFF76B8A-277E-4A61-AB98-0FB84389E2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFF76B8A-277E-4A61-AB98-0FB84389E2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFF76B8A-277E-4A61-AB98-0FB84389E2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC27A7B-C4A3-4743-A1C8-BD147EC3B9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC27A7B-C4A3-4743-A1C8-BD147EC3B9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC27A7B-C4A3-4743-A1C8-BD147EC3B9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC27A7B-C4A3-4743-A1C8-BD147EC3B9F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
