@@ -25,3 +25,18 @@
 * Many to Many 
 
    HasMany(`Child`).WithMany()
+
+
+## More Info Based on Microsoft Docs
+
+* ### HasOptional Method
+  
+   Configures an `optional` relationship from this entity type. Instances of the entity type will be able to be saved to the database without this relationship being specified. The foreign key in the database will be `nullable`.
+
+* ### HasRequired Method
+  
+   Configures a `required` relationship from this entity type. Instances of the entity type will not be able to be saved to the database unless this relationship is specified. The foreign key in the database will be `non-nullable`.
+
+* ### HasMany Method
+  
+   Configures a `many relationship` from this entity type.
