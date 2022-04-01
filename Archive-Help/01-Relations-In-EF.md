@@ -10,4 +10,9 @@
    </ul>
 </div>
  
- 
+
+HasMany(`Child`).WithMany() = Many to Many
+
+HasMany(`Child`).WithOptional(`Parent`) = One to Many -> The Child can Have Parent(Like Comments of instagram)
+
+HasMany(`Child`).WithRequired(`Parent`) = One to Many -> The Child Must Have Parent(Like Provience and City)
