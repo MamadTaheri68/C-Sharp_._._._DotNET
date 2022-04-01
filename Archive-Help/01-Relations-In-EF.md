@@ -10,9 +10,18 @@
    </ul>
 </div>
  
+* One to One
+   
+   HasOne(`Child`).WithOne()  
 
-HasMany(`Child`).WithMany() = Many to Many
+* One to Many -> The Child has Optional Parent(Like Comments of instagram)
 
-HasMany(`Child`).WithOptional(`Parent`) = One to Many -> The Child can Have Parent(Like Comments of instagram)
+   HasMany(`Child`).WithOptional(`Parent`)
 
-HasMany(`Child`).WithRequired(`Parent`) = One to Many -> The Child Must Have Parent(Like Provience and City)
+* One to Many -> The Child has Required Parent(Like Provience and City)
+
+   HasMany(`Child`).WithRequired(`Parent`)
+
+* Many to Many 
+
+   HasMany(`Child`).WithMany()
