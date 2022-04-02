@@ -51,7 +51,7 @@
 
       {
 
-         services.⭕AddTransient⭕<IPersonRepository>(c=> new NHRepo(new NHContext())) ;
+         services.⭕AddTransient⭕<Interface, Class>() ;
 
          services.AddControllersWithViews();
          
@@ -77,7 +77,7 @@
 
       {
 
-         services.⭕AddScoped⭕<IPersonRepository>(c=> new NHRepo(new NHContext())) ;
+         services.⭕AddScoped⭕<Interface, Class>() ;
 
          services.AddControllersWithViews();
          
@@ -102,7 +102,7 @@
 
       {
 
-         services.⭕AddSingleton⭕<IPersonRepository>(c=> new NHRepo(new NHContext())) ;
+         services.⭕AddSingleton⭕<Interface, Class>() ;
 
          services.AddControllersWithViews();
          
