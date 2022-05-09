@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zKnM+AKCIkNtmvNSzaMxCeV/GVaQk8zh/anU82TEpP72WCn8RhORWQ1rWnIX1Qf2HTzANodL6jh0g02vbPrScA==",
+  "dgSpecHash": "+J/Sf4Gs12+jQWVIfHf20SJgHuClPozFTkGcAGDlp7Nb7ikui2HdmvHKGC8094euvyNOyh0DfLUNnkGcnmmJ2A==",
   "success": true,
-  "projectFilePath": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSplution\\TicketingSplution.Core.Test\\TicketingSplution.Core.Test.csproj",
+  "projectFilePath": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core.Test\\TicketingSolution.Core.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

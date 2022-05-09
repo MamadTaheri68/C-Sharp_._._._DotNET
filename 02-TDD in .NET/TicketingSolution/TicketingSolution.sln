@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketingSplution.Core.Test", "TicketingSplution.Core.Test\TicketingSplution.Core.Test.csproj", "{0D3E6633-1B8A-4320-A973-7FA7145ED080}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketingSolution.Core.Test", "TicketingSolution.Core.Test\TicketingSolution.Core.Test.csproj", "{517A223E-EFB0-4787-91CF-2566E5D51C06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0D3E6633-1B8A-4320-A973-7FA7145ED080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D3E6633-1B8A-4320-A973-7FA7145ED080}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D3E6633-1B8A-4320-A973-7FA7145ED080}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D3E6633-1B8A-4320-A973-7FA7145ED080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517A223E-EFB0-4787-91CF-2566E5D51C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517A223E-EFB0-4787-91CF-2566E5D51C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517A223E-EFB0-4787-91CF-2566E5D51C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517A223E-EFB0-4787-91CF-2566E5D51C06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E07DC7A7-6437-4EA6-9691-72B0FCF43E63}
+		SolutionGuid = {B487BE72-379E-4F7F-B54E-C5B2E2189DF5}
 	EndGlobalSection
 EndGlobal

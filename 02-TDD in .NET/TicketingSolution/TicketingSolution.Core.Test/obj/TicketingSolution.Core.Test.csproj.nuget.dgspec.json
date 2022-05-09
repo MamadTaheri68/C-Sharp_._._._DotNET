@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSplution\\TicketingSplution.Core.Test\\TicketingSplution.Core.Test.csproj": {}
+    "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core.Test\\TicketingSolution.Core.Test.csproj": {}
   },
   "projects": {
-    "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSplution\\TicketingSplution.Core.Test\\TicketingSplution.Core.Test.csproj": {
+    "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core.Test\\TicketingSolution.Core.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSplution\\TicketingSplution.Core.Test\\TicketingSplution.Core.Test.csproj",
-        "projectName": "TicketingSplution.Core.Test",
-        "projectPath": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSplution\\TicketingSplution.Core.Test\\TicketingSplution.Core.Test.csproj",
+        "projectUniqueName": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core.Test\\TicketingSolution.Core.Test.csproj",
+        "projectName": "TicketingSolution.Core.Test",
+        "projectPath": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core.Test\\TicketingSolution.Core.Test.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSplution\\TicketingSplution.Core.Test\\obj\\",
+        "outputPath": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

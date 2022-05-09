@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace TicketingSplution.Core.Test
+namespace TicketingSolution.Core.Test
 {
     public class UnitTest1
     {
