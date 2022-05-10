@@ -1,6 +1,6 @@
 ﻿namespace TicketingSolution.Core.Enums
 {
-    public enum BookingSuccessFlag
+    public enum BookingResultFlag
     {
         Success,
         Failure
