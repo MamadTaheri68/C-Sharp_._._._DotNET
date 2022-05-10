@@ -2,3 +2,8 @@
 *.dll
 *.pdb
 *.cache
+bin
+*/bin
+**/bin
+**/debug
+**/obj
