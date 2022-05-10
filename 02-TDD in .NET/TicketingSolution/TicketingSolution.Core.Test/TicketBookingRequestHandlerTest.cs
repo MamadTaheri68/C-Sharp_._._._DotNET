@@ -88,5 +88,11 @@ namespace TicketingSolution.Core
             _handler.BookService(_request);
             _ticketBookingServiceMock.Verify(x => x.Save(It.IsAny<TicketBooking>()), Times.Never);
         }
+
+        //[Theory]
+        //public void Should_Return_SuccessOrFailure_Flag_In_result(BookingSuccessFlag bookingSuccessFlag, bool isAvailable)
+        //{
+
+        //}
     }
 }
