@@ -2525,6 +2525,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "TicketingSolution.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TicketingSolution.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TicketingSolution.Core.dll": {}
+        }
       }
     }
   },
@@ -8712,12 +8722,18 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "TicketingSolution.Core/1.0.0": {
+      "type": "project",
+      "path": "../TicketingSolution.Core/TicketingSolution.Core.csproj",
+      "msbuildProject": "../TicketingSolution.Core/TicketingSolution.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "Shouldly >= 4.0.3",
+      "TicketingSolution.Core >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -8756,7 +8772,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core\\TicketingSolution.Core.csproj": {
+              "projectPath": "D:\\projects\\01-training\\dotNet && C#\\Csharp&.NET-trianing\\02-TDD in .NET\\TicketingSolution\\TicketingSolution.Core\\TicketingSolution.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

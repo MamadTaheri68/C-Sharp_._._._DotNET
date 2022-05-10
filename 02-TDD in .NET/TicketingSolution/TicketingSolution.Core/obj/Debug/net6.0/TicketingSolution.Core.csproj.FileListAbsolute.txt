@@ -1,0 +1,12 @@
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\bin\Debug\net6.0\TicketingSolution.Core.deps.json
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\bin\Debug\net6.0\TicketingSolution.Core.dll
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\bin\Debug\net6.0\TicketingSolution.Core.pdb
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\TicketingSolution.Core.csproj.AssemblyReference.cache
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\TicketingSolution.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\TicketingSolution.Core.AssemblyInfoInputs.cache
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\TicketingSolution.Core.AssemblyInfo.cs
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\TicketingSolution.Core.csproj.CoreCompileInputs.cache
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\TicketingSolution.Core.dll
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\refint\TicketingSolution.Core.dll
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\TicketingSolution.Core.pdb
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core\obj\Debug\net6.0\ref\TicketingSolution.Core.dll
