@@ -212,3 +212,5 @@ D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\Ticketi
 D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core.Test\bin\Debug\net6.0\CoverletSourceRootsMapping
 D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core.Test\bin\Debug\net6.0\TicketingSolution.Core.dll
 D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core.Test\bin\Debug\net6.0\TicketingSolution.Core.pdb
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core.Test\bin\Debug\net6.0\Castle.Core.dll
+D:\projects\01-training\dotNet && C#\Csharp&.NET-trianing\02-TDD in .NET\TicketingSolution\TicketingSolution.Core.Test\bin\Debug\net6.0\Moq.dll
