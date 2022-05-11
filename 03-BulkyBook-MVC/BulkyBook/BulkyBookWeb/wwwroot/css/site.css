@@ -14,5 +14,17 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  min-height: 100vh;
+}
+
+nav {
+    height: 50px !important;
+}
+
+.main-wrapper {
+    min-height: calc(100vh - 50px - 27px);
+}
+
+footer {
+    height: 27px !important;
 }
