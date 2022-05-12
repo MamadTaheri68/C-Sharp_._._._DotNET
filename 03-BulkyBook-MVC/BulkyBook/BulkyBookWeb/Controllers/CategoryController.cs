@@ -16,5 +16,11 @@ namespace BulkyBookWeb.Controllers
             IEnumerable<Category> objCategoryList = _db.Categories.ToList();
             return View(objCategoryList);
         }
+        //Api List of All categories
+        public IActionResult list()
+        {
+            IEnumerable<Category> objCategoryList = _db.Categories.ToList();
+            return Json(objCategoryList);
+        }
     }
 }
