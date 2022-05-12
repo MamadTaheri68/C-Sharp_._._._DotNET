@@ -1,9 +1,11 @@
-﻿namespace HPlusSport.API.Models
+﻿using HPlusSport.Domain.Entities;
+
+namespace HPlusSport.API.Models
 {
-    public class Category
+    public class Category: CategoryEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public virtual List<Product> Products { get; set; }
+        //public int Id { get; set; }
+        //public string Name { get; set; } = string.Empty;
+        //public virtual List<Product> Products { get; set; }
     }
 }
