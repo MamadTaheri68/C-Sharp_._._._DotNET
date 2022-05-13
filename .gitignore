@@ -9,3 +9,5 @@ bin
 **/obj
 */data-mssql
 **/data-mssql
+*.user
+*.csproj.user
