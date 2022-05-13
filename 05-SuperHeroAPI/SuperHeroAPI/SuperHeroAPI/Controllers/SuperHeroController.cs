@@ -39,7 +39,7 @@ namespace SuperHeroAPI.Controllers
             var hero = heroes.Find(q => q.Id == id);
             if (hero == null)
             {
-                return NotFound("Heo Not Found");
+                return NotFound("Hero Not Found");
             }
             return Ok(hero);
         }
@@ -64,6 +64,18 @@ namespace SuperHeroAPI.Controllers
             hero.LastName = updatedHero.LastName;
             hero.Place = updatedHero.Place;
 
+            return Ok(heroes);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<SuperHero>>> DeleteHeroById(int id)
+        {
+            var hero = heroes.Find(q => q.Id == id);
+            if (hero == null)
+            {
+                return NotFound("Hero Not Found");
+            }
+            heroes.Remove(hero);
             return Ok(heroes);
         }
     }
