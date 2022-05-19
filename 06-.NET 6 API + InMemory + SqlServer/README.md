@@ -1,0 +1,1 @@
+06-.NET 6 API + InMemory + SqlServer
