@@ -1,12 +1,10 @@
-﻿namespace Contacts.API.Models
+﻿namespace Contacts.API.Models.DTOs
 {
-    public class Contact
+    public class AddContactRequest
     {
-        public Guid Id { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
         public long Phone { get; set; }
         public string Address { get; set; }
-
     }
 }

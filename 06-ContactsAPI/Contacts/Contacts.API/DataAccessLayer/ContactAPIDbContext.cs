@@ -1,4 +1,4 @@
-﻿using Contacts.API.Models;
+﻿using Contacts.API.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Contacts.API.DataAccessLayer
