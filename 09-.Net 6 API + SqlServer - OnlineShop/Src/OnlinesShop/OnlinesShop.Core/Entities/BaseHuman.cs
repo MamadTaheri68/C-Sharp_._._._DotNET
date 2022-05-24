@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace OnlinesShop.Core.Entities
 {
-    public abstract class BaseEntity
+    public abstract class BaseHuman
     {
         [Key]
         public long Id { get; set; }
-        public string? FirstName { get; set; }
+        
+        [MaxLength(128), Required]
+        public string FirstName { get; set; }
+        
+        [MaxLength(128), Required]
         public string? LastName { get; set; }
         public string SSN { get; set; }
         public DateTime CreationTime { get; set; }
