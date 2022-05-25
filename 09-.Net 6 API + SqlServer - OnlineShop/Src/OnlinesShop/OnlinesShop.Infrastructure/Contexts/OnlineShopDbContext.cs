@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlinesShop.Core.Entities;
+using OnlinesShop.Infrastructure.FluentApiConfigurations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +23,18 @@ namespace OnlinesShop.Infrastructure.Contexts
         public DbSet<Supplier> Suppliers => Set<Supplier>(); //public DbSet<Supplier> Suppliers { get; set; }
         
         public DbSet<Customer> Customers => Set<Customer>(); //public DbSet<Customer> Customers { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Product>()
+            //    .Property(p => p.ProductName)
+            //    .HasColumnName("Title")
+            //    .IsRequired();
+
+            //modelBuilder.Entity<Product>().ToTable("MyProduct");
+            modelBuilder.ApplyConfiguration(new ProductEntityConfiguration());
+                
+                
+        }
     } 
 }

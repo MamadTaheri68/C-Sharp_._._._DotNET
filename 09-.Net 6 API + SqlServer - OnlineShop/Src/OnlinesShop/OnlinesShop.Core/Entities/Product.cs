@@ -14,7 +14,7 @@ namespace OnlinesShop.Core.Entities
         [Key]
         public long Id { get; set; }
         
-        [MaxLength(128), Required]
+        //[MaxLength(128), Required]
         public string ProductName { get; set; }
         public long Price { get; set; }
     }
