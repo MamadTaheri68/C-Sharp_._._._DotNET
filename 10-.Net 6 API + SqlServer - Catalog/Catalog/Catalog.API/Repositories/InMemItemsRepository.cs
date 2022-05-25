@@ -2,7 +2,7 @@
 
 namespace Catalog.API.Repositories
 {
-    public class InMemItemsRepository
+    public class InMemItemsRepository : IItemsRepository
     {
         private readonly List<Item> items = new()
         {
