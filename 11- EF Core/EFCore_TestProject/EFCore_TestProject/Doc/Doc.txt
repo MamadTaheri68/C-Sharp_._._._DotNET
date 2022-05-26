@@ -1,0 +1,17 @@
+* Install EF Core packages:
+
+ **	Microsoft.EntityFrameworkCore
+ **	Microsoft.EntityFrameworkCore.SqlServer
+ **	Microsoft.EntityFrameworkCore.Tools
+
+* Create Model(Entity)
+
+* Add DbContext
+
+* Add connection string into appsetting.json
+
+* Inject sqlServer into Services
+
+* Inject context into our controllers
+
+* Migration
