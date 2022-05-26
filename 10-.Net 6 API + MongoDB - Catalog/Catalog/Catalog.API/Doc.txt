@@ -14,4 +14,13 @@ _____________________________________
 _____________________________________
 ** Wit MongoDB Database and Context
 
+** We need to install package -> MongoDB.Driver
+
+** using Docker image of mongoDB
+
+Run an mongoDB image ::: docker run -d --rm --name mongo -p 27017:27017 -v mongodbdate:/data/db mongo
+
+** like sql we nedd to Add settings in appsettings.json -> MongoDbSettings -> Host && Port
+
+
 ** Add IRepository and Repository again

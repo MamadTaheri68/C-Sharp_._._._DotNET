@@ -1,4 +1,10 @@
 using Catalog.API.Repositories;
+using Catalog.API.Repositories.Implementations;
+using Catalog.API.Settings;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
+using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +16,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Inject dependencies
-builder.Services.AddSingleton<IItemsRepository, InMemItemsRepository>();
+BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
+BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
+
+builder.Services.AddSingleton<IMongoClient>(q =>
+{
+    var settings = builder.Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
+    return new MongoClient(settings.ConnectionString);
+});
+
+//builder.Services.AddSingleton<IItemsRepository, InMemItemsRepository>();
+builder.Services.AddSingleton<IItemsRepository, MongoDbItemsRepository>();
 
 var app = builder.Build();
 
