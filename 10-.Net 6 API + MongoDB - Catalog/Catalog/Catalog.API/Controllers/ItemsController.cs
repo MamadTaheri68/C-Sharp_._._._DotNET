@@ -17,17 +17,18 @@ namespace Catalog.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<ItemDto> GetItems()
+        public async Task<IEnumerable<ItemDto>> GetItemsAsync()
         {
-            var items = _repository.GetItems().Select(q => q.AsDto()).ToList();
+            var items = (await _repository.GetItemsAsync())
+                        .Select(q => q.AsDto()).ToList();
 
             return items;
         }
 
         [HttpGet("{id}")]
-        public ActionResult<ItemDto> GetItem(Guid id)
+        public async Task<ActionResult<ItemDto>> GetItemAsync(Guid id)
         {
-            var item = _repository.GetItem(id);
+            var item = await _repository.GetItemAsync(id);
 
             if(item is null)
             {
@@ -38,7 +39,7 @@ namespace Catalog.API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+        public async Task<ActionResult<ItemDto>> CreateItemAsync(CreateItemDto itemDto)
         {
             Item item = new()
             {
@@ -49,15 +50,15 @@ namespace Catalog.API.Controllers
             };
 
 
-            _repository.CreateItem(item);
+            await _repository.CreateItemAsync(item);
 
-            return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.AsDto());
+            return CreatedAtAction(nameof(GetItemAsync), new { id = item.Id }, item.AsDto());
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateItem(Guid id, UpdateItemDto itemDto)
+        public async Task<ActionResult> UpdateItemAsync(Guid id, UpdateItemDto itemDto)
         {
-            var exisingItem = _repository.GetItem(id);
+            var exisingItem = await _repository.GetItemAsync(id);
 
             if(exisingItem is null)
             {
@@ -70,22 +71,22 @@ namespace Catalog.API.Controllers
                 Price = itemDto.Price,
             };
 
-            _repository.UpdateItem(updatedItem);
+            await _repository.UpdateItemAsync(updatedItem);
 
             return Ok("Updated Successfully");
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeleteItem(Guid id)
+        public async Task<ActionResult> DeleteItemAsync(Guid id)
         {
-            var existingItem = _repository.GetItem(id);
+            var existingItem = await _repository.GetItemAsync(id);
 
             if(existingItem is null)
             {
                 return NotFound();
             }
 
-            _repository.DeleteItem(id);
+            await _repository.DeleteItemAsync(id);
 
             return Ok("Deleted Successfully");
         }
