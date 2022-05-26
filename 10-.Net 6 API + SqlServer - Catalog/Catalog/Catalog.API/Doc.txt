@@ -1,5 +1,12 @@
+_____________________________________
+** Withouth Database and Context
+
 ** Define Entities
 
 ** Add Repository
 
-** Add Controller
+** Add DTO -> Data Transfer Object 
+
+** Add custom Mapper extension
+
+** Add Controller -> use Dto and Mapper
