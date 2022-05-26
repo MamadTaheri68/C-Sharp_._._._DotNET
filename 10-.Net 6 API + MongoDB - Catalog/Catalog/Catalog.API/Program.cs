@@ -1,6 +1,7 @@
 using Catalog.API.Repositories;
 using Catalog.API.Repositories.Implementations;
 using Catalog.API.Settings;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
@@ -22,11 +23,19 @@ builder.Services.AddSwaggerGen();
 BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
 BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
 
+var mongoDbSettings = builder.Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
 builder.Services.AddSingleton<IMongoClient>(q =>
 {
-    var settings = builder.Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
-    return new MongoClient(settings.ConnectionString);
+    return new MongoClient(mongoDbSettings.ConnectionString);
 });
+
+builder.Services.AddHealthChecks().
+    AddMongoDb(
+    mongoDbSettings.ConnectionString, 
+    name: "mongodb", 
+    timeout: TimeSpan.FromSeconds(3),
+    tags: new[] { "ready"}
+    );
 
 //builder.Services.AddSingleton<IItemsRepository, InMemItemsRepository>();
 builder.Services.AddSingleton<IItemsRepository, MongoDbItemsRepository>();
@@ -45,5 +54,15 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHealthChecks("/health/ready", new HealthCheckOptions
+{
+    Predicate = (check) => check.Tags.Contains("tags")
+});
+
+app.MapHealthChecks("/health/live", new HealthCheckOptions
+{
+    Predicate = (_) => false
+});
 
 app.Run();

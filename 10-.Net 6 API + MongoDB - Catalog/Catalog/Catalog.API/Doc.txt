@@ -24,3 +24,5 @@ Run an mongoDB image ::: docker run -d --rm --name mongo -p 27017:27017 -v mongo
 
 
 ** Add IRepository and Repository again
+
+** Add AspNetCore.HealthChecks.MongoDb package for Health check
