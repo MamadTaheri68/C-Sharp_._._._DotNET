@@ -6,6 +6,7 @@
         public string Name { get; set; }
         public double UnitPrice { get; set; }
         public bool IsInStock { get; set; }
+        public int DiscountRate { get; set; }
         public DateTime CreationDate { get; set; }
 
         public Product(string name, double unitPrice)
@@ -13,7 +14,13 @@
             Name = name;
             UnitPrice = unitPrice;
             IsInStock = true;
+            DiscountRate = 0;
             CreationDate = DateTime.Now;
+        }
+
+        public void SetDiscountRate(int rate)
+        {
+            this.DiscountRate = rate;
         }
     }
 }

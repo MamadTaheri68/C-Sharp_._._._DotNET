@@ -14,4 +14,13 @@
 
 * Inject context into our controllers
 
-* Migration
+* Migration:
+
+ **	Add-Migration name
+ **	Update-Database
+
+ in case of false migrations:
+ ** Update-Database name
+
+ to see the oytput script of migrations:
+ ** Script-Migration
