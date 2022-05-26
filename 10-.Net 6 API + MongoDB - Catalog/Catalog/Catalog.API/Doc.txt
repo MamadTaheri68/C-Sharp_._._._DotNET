@@ -3,7 +3,7 @@ _____________________________________
 
 ** Define Entities
 
-** Add Repository
+** Add IRepository and Repository
 
 ** Add DTO -> Data Transfer Object 
 
@@ -13,3 +13,5 @@ _____________________________________
 
 _____________________________________
 ** Wit MongoDB Database and Context
+
+** Add IRepository and Repository again
