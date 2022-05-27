@@ -37,9 +37,26 @@ namespace EFCore_TestProject.Controllers
             //var product = _shopDbContext.Products.First(q => q.Id == 15); // Exception
             //var product = _shopDbContext.Products.First(q => q.Id == 3); // first elemnet of sequence
             //var roduct = _shopDbContext.Products.FirstOrDefault(q => q.Name == "Ipad");
-            var roduct = _shopDbContext.Products.FirstOrDefault(q => q.IsInStock == true && q.DiscountRate > 0);
+            //var roduct = _shopDbContext.Products.FirstOrDefault(q => q.IsInStock == true && q.DiscountRate > 0);
 
-            return View();
+            //var product = _shopDbContext.Products.SingleOrDefault(q => !q.IsInStock);
+            //var product = _shopDbContext.Products.Single(q => q.Id == 15);
+
+            // Just searches for primary key
+            //var product = _shopDbContext.Products.Find(Convert.ToInt64(2));
+
+            // List
+            //var products = _shopDbContext.Products.ToList();
+            //var products = _shopDbContext.Products.Where(q => q.UnitPrice < 1000).ToList();
+            //var products = _shopDbContext.Products
+            //    .Where(q => q.UnitPrice < 1000)
+            //    .Where(q => q.IsInStock)
+            //    .ToList();
+            var products = _shopDbContext.Products
+               .Where(q => q.UnitPrice >700)
+               .ToList();
+
+            return View(products);
         }
 
         public IActionResult Privacy()
