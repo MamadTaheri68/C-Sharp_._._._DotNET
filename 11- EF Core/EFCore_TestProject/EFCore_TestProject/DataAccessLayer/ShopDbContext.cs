@@ -10,11 +10,15 @@ namespace EFCore_TestProject.DataAccessLayer
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<AuthorBiography> AuthorBiographies { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ProductMapping());
             modelBuilder.ApplyConfiguration(new ProductCategoryMapping());
+            modelBuilder.ApplyConfiguration(new AuthorMapping());
+            modelBuilder.ApplyConfiguration(new AuthorBiographyMapping());
 
             base.OnModelCreating(modelBuilder);
         }
