@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCore_TestProject.Migrations
 {
     [DbContext(typeof(ShopDbContext))]
-    [Migration("20220527103319_AlterTableNameOfProducts")]
-    partial class AlterTableNameOfProducts
+    [Migration("20220527115230_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,6 +32,9 @@ namespace EFCore_TestProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
@@ -39,11 +42,12 @@ namespace EFCore_TestProject.Migrations
                         .HasColumnType("int");
 
                     b.Property<bool>("IsInStock")
-                        .HasColumnType("bit");
+                        .HasColumnType("bit")
+                        .HasColumnName("AvailableInStockByFluentAPI");
 
                     b.Property<bool>("IsRemoved")
                         .HasColumnType("bit")
-                        .HasColumnName("IsDeletedByUser");
+                        .HasColumnName("IsDeletedByFluentAPI");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -55,7 +59,43 @@ namespace EFCore_TestProject.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MyProducts", "ASO_SHOP");
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Products", (string)null);
+                });
+
+            modelBuilder.Entity("EFCore_TestProject.Models.ProductCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductCategories", (string)null);
+                });
+
+            modelBuilder.Entity("EFCore_TestProject.Models.Product", b =>
+                {
+                    b.HasOne("EFCore_TestProject.Models.ProductCategory", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("EFCore_TestProject.Models.ProductCategory", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

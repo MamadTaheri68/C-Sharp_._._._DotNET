@@ -3,27 +3,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EFCore_TestProject.Models
 {
-    [Table("MyProducts", Schema = "ASO_SHOP")]
     public class Product
     {
-        [Key]
         public long Id { get; set; }
-        
-        [Required]
-        [MinLength(1)]
-        [MaxLength(255)]
         public string Name { get; set; }
-        
         public double UnitPrice { get; set; }
-        
         public bool IsInStock { get; set; }
-        
         public int DiscountRate { get; set; }
-        
-        [Column("IsDeletedByUser")]
-        public bool IsRemoved { get; set; }
-        
         public DateTime CreationDate { get; set; }
+        public bool IsRemoved { get; set; }
+        public int CategoryId { get; set; }
+        public ProductCategory Category { get; set; }
 
         public Product(string name, double unitPrice)
         {
