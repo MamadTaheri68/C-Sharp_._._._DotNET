@@ -27,7 +27,7 @@ namespace EFCoreProject.Application
             if (productCategory == null)
                 return;
             productCategory.Edit(command.Name);
-            _productCategoryRepository.SaveChanges;
+            _productCategoryRepository.SaveChanges();
         }
 
         public List<ProductCategoryViewModel> Search(string name)

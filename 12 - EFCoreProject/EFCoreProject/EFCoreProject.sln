@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreProject.Infrastructure.EFCore", "Infrastructure\EFCoreProject.Infrastructure.EFCore\EFCoreProject.Infrastructure.EFCore.csproj", "{C83A53D7-E330-4A0D-9848-D4372ADDE420}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CFF16558-0F95-4FDC-80DE-F4C21A29E2A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{D7199929-C067-4924-8FE3-70C35521369F} = {CFF16558-0F95-4FDC-80DE-F4C21A29E2A8}
 		{1D630E50-23A3-4E07-AD08-D4AF2E365B9D} = {08C8F964-8607-44EB-8D84-73B71B425DFB}
 		{72640F07-0F3E-441A-995E-293A824C1A24} = {08E6877C-AAC6-4F7B-BA53-2A833B034FB6}
 		{96501385-4318-48D8-B382-669E9AB21133} = {08E6877C-AAC6-4F7B-BA53-2A833B034FB6}
