@@ -70,7 +70,10 @@ namespace EFCoreProject.Infrastructure.EFCore.Repository
             if(!string.IsNullOrWhiteSpace(searchModel.Name))
                 query = query.Where(q => q.Name.Contains(searchModel.Name));
 
-            return query.OrderByDescending(q => q.Id).AsNoTracking().ToList();
+            return query
+                .OrderByDescending(q => q.Id)
+                .AsNoTracking()
+                .ToList();
 
         }
     }
