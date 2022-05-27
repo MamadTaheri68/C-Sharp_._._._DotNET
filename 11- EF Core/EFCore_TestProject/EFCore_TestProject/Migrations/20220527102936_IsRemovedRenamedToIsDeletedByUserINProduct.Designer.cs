@@ -4,6 +4,7 @@ using EFCore_TestProject.DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCore_TestProject.Migrations
 {
     [DbContext(typeof(ShopDbContext))]
-    partial class ShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220527102936_IsRemovedRenamedToIsDeletedByUserINProduct")]
+    partial class IsRemovedRenamedToIsDeletedByUserINProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +55,7 @@ namespace EFCore_TestProject.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MyProducts", "ASO_SHOP");
+                    b.ToTable("Products");
                 });
 #pragma warning restore 612, 618
         }
