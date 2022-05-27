@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\EFCoreProject.Application.Contracts\EFCoreProject.Application.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
