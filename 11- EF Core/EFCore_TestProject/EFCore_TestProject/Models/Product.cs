@@ -7,6 +7,7 @@
         public double UnitPrice { get; set; }
         public bool IsInStock { get; set; }
         public int DiscountRate { get; set; }
+        public bool IsRemoved { get; set; }
         public DateTime CreationDate { get; set; }
 
         public Product(string name, double unitPrice)

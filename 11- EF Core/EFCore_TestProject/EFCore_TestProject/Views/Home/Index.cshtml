@@ -8,18 +8,22 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
+<h1>
+    @Model.Count
+</h1>
 
 <div class="row">
     <div class="col-12">
         <table class="table table-bordered table-striped">
             <thead>
-                <tr>
+                <tr class="text-white bg-success">
                     <th>Id</th>
                     <th>Name</th>
                     <th>UnitPrice</th>
                     <th>CreationDate</th>
                     <th>IsInStock</th>
                     <th>DiscountRate</th>
+                    <th>IsRemoved</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,6 +36,7 @@
                         <td>@product.CreationDate</td>
                         <td>@product.IsInStock</td>
                         <td>@product.DiscountRate</td>
+                        <td>@product.IsRemoved</td>
                     </tr>
                       
                 }

@@ -16,9 +16,13 @@ namespace EFCore_TestProject.Controllers
 
         public IActionResult Index()
         {
-            //var product = new Product("Mac Book Pro", 3999);
-            //product.SetDiscountRate(6);
-            //_shopDbContext.Add(product);
+            //for(int i=0; i<1000; i++)
+            //{
+            //    var product = new Product("Mac Book Pro", new Random().Next());
+            //    product.SetDiscountRate(new Random().Next() % 10);
+            //    _shopDbContext.Add(product);
+            //}
+
 
             //var product2 = new Product("Ipad", 1999);
             //product2.SetDiscountRate(3);
@@ -52,11 +56,61 @@ namespace EFCore_TestProject.Controllers
             //    .Where(q => q.UnitPrice < 1000)
             //    .Where(q => q.IsInStock)
             //    .ToList();
-            var products = _shopDbContext.Products
-               .Where(q => q.UnitPrice >700)
-               .ToList();
+            //var products = _shopDbContext.Products
+            //   .Where(q => q.UnitPrice >700)
+            //   .ToList();
 
-            return View(products);
+            //var maxUnitPrice = _shopDbContext.Products.Max(q => q.UnitPrice);
+            //var minUnitPrice = _shopDbContext.Products.Min(q => q.UnitPrice);
+            //var productCount1 = _shopDbContext.Products.Count();
+            //var productCount2 = _shopDbContext.Products.LongCount(q => q.IsInStock);
+            //var productCount3 = _shopDbContext.Products.LongCount(q => q.DiscountRate > 0);
+            //var any1 = _shopDbContext.Products.Any(q => q.DiscountRate > 3);
+            //var all1 = _shopDbContext.Products.All(q => q.DiscountRate > 3);
+
+            // Update
+            /*var product = _shopDbContext.Products.FirstOrDefault(q => q.Id == 2);
+            if (product != null)
+            {
+                product.UnitPrice = 123321;
+                product.DiscountRate = 331233213;
+                _shopDbContext.SaveChanges();
+            }*/
+
+            //var products = _shopDbContext.Products.ToList();
+            ////products.ForEach(product => product.IsInStock = false);
+            //products.ForEach(product => product.IsInStock = true);
+            //_shopDbContext.SaveChanges();
+
+            // Physical Delete
+            /*var productToDelete = _shopDbContext.Products.FirstOrDefault(q => q.Id == 4);
+            if (productToDelete is not null)
+            {
+                _shopDbContext.Products.Remove(productToDelete);
+                _shopDbContext.SaveChanges();
+            }*/
+
+            // Logical Delete
+            //var productToDelete = _shopDbContext.Products.FirstOrDefault(q => q.Id == 3);
+            //if (productToDelete is not null)
+            //{
+            //    productToDelete.IsRemoved = true;
+            //    _shopDbContext.SaveChanges();
+            //}
+
+            //var product = _shopDbContext.Products.First();
+            //product.SetDiscountRate(13);
+            //var state = _shopDbContext.Entry(product).State;
+
+
+
+            
+
+            var productsToShow = _shopDbContext.Products
+                .Where(q => !q.IsRemoved)
+                .Where(q => q.DiscountRate < 2)
+                .ToList();
+            return View(productsToShow);
         }
 
         public IActionResult Privacy()
