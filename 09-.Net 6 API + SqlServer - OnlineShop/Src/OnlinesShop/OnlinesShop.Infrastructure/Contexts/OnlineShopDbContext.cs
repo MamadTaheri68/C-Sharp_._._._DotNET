@@ -32,6 +32,7 @@ namespace OnlinesShop.Infrastructure.Contexts
             //    .IsRequired();
 
             //modelBuilder.Entity<Product>().ToTable("MyProduct");
+
             modelBuilder.ApplyConfiguration(new ProductEntityConfiguration());
                 
                 

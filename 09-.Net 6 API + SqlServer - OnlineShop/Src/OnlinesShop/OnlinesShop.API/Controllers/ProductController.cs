@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OnlinesShop.Application.Interfaces;
 using OnlinesShop.Infrastructure.Dto;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace OnlinesShop.API.Controllers
 {
@@ -26,6 +27,8 @@ namespace OnlinesShop.API.Controllers
         }
 
         [HttpGet]
+         
+
         public async Task<IActionResult> GetAll()
         {
             var result = await _productService.GetAllProducts();
