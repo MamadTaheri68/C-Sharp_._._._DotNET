@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Portfoli>
+@{
     ViewData["Title"] = "صفحه اصلی";
 }
 
@@ -8,8 +9,34 @@
     <meta name="description" content="Index Description"/>
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h3>building Web apps with ASP.NET Core</h3>
-    <p>Learn about Me </p>
-</div>
+<section id="one">
+    <header class="major">
+        <h2>
+            @ViewData["headingTitle"]
+        </h2>
+    </header>
+    <p>
+        @ViewData["headingText"]
+    </p>
+    <p>
+        @ViewBag.aaa
+    </p>
+</section>
+
+<section id="two">
+    <h2>نمونه کارهای اخیر</h2>
+    <div class="row">
+
+        @foreach (var portfolio in Model)
+        {
+            <article class="6u 12u$(xsmall) work-item" style="width: 33%;">
+                <a href="~/images/thumbs/@portfolio.Image" class="image fit thumb" alt="@portfolio.Title" title="@portfolio.Description">
+                    <img src="~/images/thumbs/@portfolio.Image" alt="@portfolio.Title" title="@portfolio.Description"/>
+                </a>
+                <h3>@portfolio.Title</h3>
+                <p>@portfolio.Description</p>
+            </article>
+        }
+
+    </div>
+</section>

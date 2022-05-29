@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>نمونه کار من | @ViewData["Title"]</title>
+    <title>داشبورد مدیریتی | @ViewData["Title"]</title>
     
     @RenderSection("SEO", required: true)
 
@@ -20,13 +20,19 @@
         <a href="#" class="image avatar">
             <img src="~/images/avatar.JPG" alt="" />
         </a>
-        <h1>
-            <strong>نمونه کار من</strong>، اولین پروژه از دوره <br />
-            Asp.net Core Mvc & Api است.<br />
-            که توسط <a href="http://html5up.net"> موسسه آموزشی آتریا </a> تهیه شده.
-        </h1> 
-        <a href="#">صفحه اصلی</a>
-        <a href="#">تماس با من</a>
+        <h2>
+            داشبورد مدیریتی
+        </h2>
+        <h4>
+            همیار بورس
+        </h4>
+
+        @*<a href="@Url.Action("Index", "Home")">صفحه اصلی</a>*@
+        @*<a href="@Url.Action("Contact", "Home")">تماس با من</a>*@
+
+        <a asp-controller="Home" asp-action="Index" >صفحه اصلی</a>
+        <a asp-controller="Home" asp-action="Contact">تماس با من</a>
+
     </header>
     
     <div id="main">
