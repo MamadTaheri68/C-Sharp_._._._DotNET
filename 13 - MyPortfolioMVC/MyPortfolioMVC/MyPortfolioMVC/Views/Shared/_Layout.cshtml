@@ -8,54 +8,58 @@
     @RenderSection("SEO", required: true)
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MyPortfolioMVC.styles.css" asp-append-version="true" />
+    
+    <link href="~/css/skel.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/style-xlarge.css" rel="stylesheet" />
+
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MyPortfolioMVC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">خانه</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">حریم خصوصی</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Shop">فروشگاه</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body id="top">
+
+    <header id="header">
+        <a href="#" class="image avatar">
+            <img src="~/images/avatar.JPG" alt="" />
+        </a>
+        <h1>
+            <strong>نمونه کار من</strong>، اولین پروژه از دوره <br />
+            Asp.net Core Mvc & Api است.<br />
+            که توسط <a href="http://html5up.net"> موسسه آموزشی آتریا </a> تهیه شده.
+        </h1> 
+        <a href="#">صفحه اصلی</a>
+        <a href="#">تماس با من</a>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-
-            @{
-                const string footerText = "Some text..................";
-            }
-
-        </main>
+    
+    <div id="main">
+        @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - MyPortfolioMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            <h3>@footerText</h3>
-        </div>
+    <footer id="footer">
+        <ul class="icons">
+            <li>
+                <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+            </li>
+            <li>
+                <a href="#" class="icon fa-github"><span class="label">Github</span></a>
+            </li>
+            <li>
+                <a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a>
+            </li>
+            <li>
+                <a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a>
+            </li>
+        </ul>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.poptrox.min.js"></script>
+    <script src="~/js/skel.min.js"></script>
+    <script src="~/js/init.js"></script>
+
+
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
