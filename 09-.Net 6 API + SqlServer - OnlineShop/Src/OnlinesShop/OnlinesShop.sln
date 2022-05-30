@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlinesShop.API", "OnlinesShop.API\OnlinesShop.API.csproj", "{24716CF3-BE91-48F2-8249-3E91F825807E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlinesShop.API", "OnlinesShop.API\OnlinesShop.API.csproj", "{24716CF3-BE91-48F2-8249-3E91F825807E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlinesShop.Application", "OnlinesShop.Application\OnlinesShop.Application.csproj", "{B0A32B24-F224-46E4-AF02-24E2E838EEF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlinesShop.Application", "OnlinesShop.Application\OnlinesShop.Application.csproj", "{B0A32B24-F224-46E4-AF02-24E2E838EEF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlinesShop.Core", "OnlinesShop.Core\OnlinesShop.Core.csproj", "{E55E65B9-26E4-43A8-9FF6-E8D17D148929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlinesShop.Core", "OnlinesShop.Core\OnlinesShop.Core.csproj", "{E55E65B9-26E4-43A8-9FF6-E8D17D148929}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlinesShop.Infrastructure", "OnlinesShop.Infrastructure\OnlinesShop.Infrastructure.csproj", "{D98E45A6-00A0-4781-9B94-E83AD070B5D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlinesShop.Infrastructure", "OnlinesShop.Infrastructure\OnlinesShop.Infrastructure.csproj", "{D98E45A6-00A0-4781-9B94-E83AD070B5D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1385DCED-1E92-43F4-A0E8-89EDDE1C7F55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{EEEB2CD4-A0D1-4E17-8F93-B1ECF841A80A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B1C17BA9-7959-4536-BF0E-3CCFB92EF95A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3BDCDE9F-8AA4-413A-BFEC-321245F764E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +44,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24716CF3-BE91-48F2-8249-3E91F825807E} = {1385DCED-1E92-43F4-A0E8-89EDDE1C7F55}
+		{B0A32B24-F224-46E4-AF02-24E2E838EEF1} = {EEEB2CD4-A0D1-4E17-8F93-B1ECF841A80A}
+		{E55E65B9-26E4-43A8-9FF6-E8D17D148929} = {B1C17BA9-7959-4536-BF0E-3CCFB92EF95A}
+		{D98E45A6-00A0-4781-9B94-E83AD070B5D9} = {3BDCDE9F-8AA4-413A-BFEC-321245F764E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79602383-B57E-43DC-9956-7057E3B8F43E}
