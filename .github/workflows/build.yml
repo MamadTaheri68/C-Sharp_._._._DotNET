@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./09-.Net 6 API + SqlServer - OnlineShop/Src/OnlinesShop/OnlinesShop.API/OnlinesShop.API.csproj
     - name: Build
       run: dotnet build ./09-.Net 6 API + SqlServer - OnlineShop/Src/OnlinesShop/OnlinesShop.API/OnlinesShop.API.csproj --no-restore
     - name: Test
