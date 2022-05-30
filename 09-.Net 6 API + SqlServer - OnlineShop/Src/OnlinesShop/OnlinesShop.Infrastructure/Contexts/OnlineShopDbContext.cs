@@ -11,31 +11,13 @@ namespace OnlinesShop.Infrastructure.Contexts
 {
     public class OnlineShopDbContext : DbContext
     {
-        public OnlineShopDbContext(DbContextOptions options): base(options)
-        {
-
-        }
+        public OnlineShopDbContext(DbContextOptions options): base(options) { }
         
         public DbSet<Product> Products => Set<Product>();    //public DbSet<Product> Products { get; set; }
 
-        public DbSet<Employee> Employees => Set<Employee>(); //public DbSet<Employee> Employees { get; set; }
-        
-        public DbSet<Supplier> Suppliers => Set<Supplier>(); //public DbSet<Supplier> Suppliers { get; set; }
-        
-        public DbSet<Customer> Customers => Set<Customer>(); //public DbSet<Customer> Customers { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Product>()
-            //    .Property(p => p.ProductName)
-            //    .HasColumnName("Title")
-            //    .IsRequired();
-
-            //modelBuilder.Entity<Product>().ToTable("MyProduct");
-
             modelBuilder.ApplyConfiguration(new ProductEntityConfiguration());
-                
-                
         }
     } 
 }

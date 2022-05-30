@@ -13,13 +13,13 @@ namespace OnlinesShop.Infrastructure.FluentApiConfigurations
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.ToTable("ASO_*_Products");
+            builder.ToTable("Products");
 
             builder.HasKey(x => x.Id);
 
             builder.Property(q => q.ProductName)
-                .HasColumnName("Titl20222")
-                .HasMaxLength(199)
+                .HasColumnName("Title")
+                .HasMaxLength(123)
                 .HasColumnOrder(1);
         }
     }

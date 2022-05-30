@@ -88,7 +88,7 @@ namespace OnlinesShop.Application.Services
             //    PriceWithComma = product.Price.ToString("###.###"),
             //};
 
-            var product = await _onlineShopDbContext.Products.FindAsync(productId;
+            var product = await _onlineShopDbContext.Products.FindAsync(productId);
             var model = _mapper.Map<ProductDto>(product);
 
             return model;
