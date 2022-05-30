@@ -7,7 +7,12 @@ namespace OnlinesShop.Test.xUnit
         [Fact]
         public void Test1()
         {
+            var testString = "mamdad";
 
+            bool result = (testString == "mamdad");
+
+            Assert.True(result);
         }
+
     }
 }
