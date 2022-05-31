@@ -11,8 +11,8 @@ using OnlinesShop.Infrastructure.Contexts;
 namespace OnlinesShop.Infrastructure.Migrations
 {
     [DbContext(typeof(OnlineShopDbContext))]
-    [Migration("20220530180122_refresh")]
-    partial class refresh
+    [Migration("20220530210820_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,11 +25,11 @@ namespace OnlinesShop.Infrastructure.Migrations
 
             modelBuilder.Entity("OnlinesShop.Core.Entities.Product", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<long>("Price")
                         .HasColumnType("bigint");

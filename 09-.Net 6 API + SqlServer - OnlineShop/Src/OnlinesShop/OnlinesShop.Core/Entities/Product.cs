@@ -10,7 +10,7 @@ namespace OnlinesShop.Core.Entities
 {
     public class Product
     {
-        public long Id { get; set; }
+        public int Id { get; set; }
         public string ProductName { get; set; }
         public long Price { get; set; }
     }

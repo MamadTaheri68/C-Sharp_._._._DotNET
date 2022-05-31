@@ -5,6 +5,9 @@ using OnlinesShop.Application.Services;
 using OnlinesShop.Infrastructure.Contexts;
 
 using OnlinesShop.Application.Mapping;
+using MediatR;
+using System.Reflection;
+using OnlinesShop.Application.CQRS.ProductCommandQuery.Command;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,10 +23,13 @@ builder.Services.AddSwaggerGen(c =>
     c.EnableAnnotations();
 });
 
+//inject MediatR using Assembly of a CQRS class
+builder.Services.AddMediatR(typeof(SaveProductCommand));
+
 
 // Register DbContext
-string cString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<OnlineShopDbContext>(options => options.UseSqlServer(cString));
+string conStr = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<OnlineShopDbContext>(options => options.UseSqlServer(conStr));
 
 // Register Services
 builder.Services.AddScoped<IProductService, ProductService>();

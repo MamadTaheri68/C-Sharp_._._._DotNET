@@ -16,11 +16,11 @@ namespace OnlinesShop.Infrastructure.FluentApiConfigurations
             builder.ToTable("Products");
 
             builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id).HasColumnType("integer");
 
             builder.Property(q => q.ProductName)
                 .HasColumnName("Title")
-                .HasMaxLength(123)
-                .HasColumnOrder(1);
+                .HasMaxLength(123);
         }
     }
 }

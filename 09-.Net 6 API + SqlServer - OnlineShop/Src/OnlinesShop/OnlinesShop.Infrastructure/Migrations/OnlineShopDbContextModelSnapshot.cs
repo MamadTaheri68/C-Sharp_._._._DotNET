@@ -23,11 +23,11 @@ namespace OnlinesShop.Infrastructure.Migrations
 
             modelBuilder.Entity("OnlinesShop.Core.Entities.Product", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<long>("Price")
                         .HasColumnType("bigint");
