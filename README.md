@@ -1,22 +1,5 @@
-# How To create an Singletone Class in C#?
+# C# is Awesome!
 
-    public class SingleTonTest
-    {
-        public int Test { get; set; } = 1;
-        private static SingleTonTest _singletoneTest;
-        private SingleTonTest()
-        {
+# .Net Core (.Net 6.0) is Awesome!
 
-        }
-
-        public static SingleTonTest GetInstance()
-        {
-            if (_singletoneTest == null)
-            {
-                _singletoneTest = new SingleTonTest();
-            }
-            return _singletoneTest;
-        }
-    }
-
-    //test
+This is a repository to save my C# training codes and use them again in the future.
