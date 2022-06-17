@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{D4EEEE64-2F63-43FA-B5CD-74F20EFA3B45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{F2707988-EA0F-49B5-8E10-90227BC00D3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7E4CA82B-1B6F-45B4-A85E-A1D85A861E6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Core", "01.Core", "{8363555A-31C5-45B1-B9B4-95CAD6C06075}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Infrastructure", "02.Infrastructure", "{91BE4532-FC77-466F-A20C-617475F07698}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Application", "03.Application", "{33C5D4CD-27A9-4282-86B9-B2A27D4A88CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Presentation", "04.Presentation", "{8BEC7642-08E3-44FC-B9E1-929CF641C366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop-Deram.Core", "Src\01.Core\OnlineShop-Deram.Core\OnlineShop-Deram.Core.csproj", "{D02FD9C4-AB92-4B5B-8F42-0C2829BC7D5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop-Deram.Infrastructure", "Src\02.Infrastructure\OnlineShop-Deram.Infrastructure\OnlineShop-Deram.Infrastructure.csproj", "{1E1E3029-8176-4E6B-ABB9-187F8E977054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop-Deram.Application", "Src\03.Application\OnlineShop-Deram.Application\OnlineShop-Deram.Application.csproj", "{73C995CB-6E61-4B39-9EEB-7EA3DF703D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop-Deram.API", "Src\04.Presentation\OnlineShop-Deram.API\OnlineShop-Deram.API.csproj", "{15093145-6602-42BE-9549-4436768053B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop-Deram.MVC", "Src\04.Presentation\OnlineShop-Deram.MVC\OnlineShop-Deram.MVC.csproj", "{10B33C52-1E25-49DD-872D-F3BE7E35C559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D02FD9C4-AB92-4B5B-8F42-0C2829BC7D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02FD9C4-AB92-4B5B-8F42-0C2829BC7D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02FD9C4-AB92-4B5B-8F42-0C2829BC7D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02FD9C4-AB92-4B5B-8F42-0C2829BC7D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E1E3029-8176-4E6B-ABB9-187F8E977054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1E3029-8176-4E6B-ABB9-187F8E977054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1E3029-8176-4E6B-ABB9-187F8E977054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1E3029-8176-4E6B-ABB9-187F8E977054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C995CB-6E61-4B39-9EEB-7EA3DF703D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C995CB-6E61-4B39-9EEB-7EA3DF703D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C995CB-6E61-4B39-9EEB-7EA3DF703D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C995CB-6E61-4B39-9EEB-7EA3DF703D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15093145-6602-42BE-9549-4436768053B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15093145-6602-42BE-9549-4436768053B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15093145-6602-42BE-9549-4436768053B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15093145-6602-42BE-9549-4436768053B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B33C52-1E25-49DD-872D-F3BE7E35C559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B33C52-1E25-49DD-872D-F3BE7E35C559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B33C52-1E25-49DD-872D-F3BE7E35C559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B33C52-1E25-49DD-872D-F3BE7E35C559}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8363555A-31C5-45B1-B9B4-95CAD6C06075} = {F2707988-EA0F-49B5-8E10-90227BC00D3E}
+		{91BE4532-FC77-466F-A20C-617475F07698} = {F2707988-EA0F-49B5-8E10-90227BC00D3E}
+		{33C5D4CD-27A9-4282-86B9-B2A27D4A88CC} = {F2707988-EA0F-49B5-8E10-90227BC00D3E}
+		{8BEC7642-08E3-44FC-B9E1-929CF641C366} = {F2707988-EA0F-49B5-8E10-90227BC00D3E}
+		{D02FD9C4-AB92-4B5B-8F42-0C2829BC7D5D} = {8363555A-31C5-45B1-B9B4-95CAD6C06075}
+		{1E1E3029-8176-4E6B-ABB9-187F8E977054} = {91BE4532-FC77-466F-A20C-617475F07698}
+		{73C995CB-6E61-4B39-9EEB-7EA3DF703D62} = {33C5D4CD-27A9-4282-86B9-B2A27D4A88CC}
+		{15093145-6602-42BE-9549-4436768053B7} = {8BEC7642-08E3-44FC-B9E1-929CF641C366}
+		{10B33C52-1E25-49DD-872D-F3BE7E35C559} = {8BEC7642-08E3-44FC-B9E1-929CF641C366}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8B7F952-FBF3-4BAE-B54C-E993DCD525F7}
+	EndGlobalSection
+EndGlobal
